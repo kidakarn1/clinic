@@ -1,0 +1,92 @@
+<%@ page import="java.sql.*" %> 
+<%@page pageEncoding="UTF-8"%>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">    <body>
+      <div class="modal fade" id="brand" tabindex="-1" role="dialog" aria-labelledby="brand">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="brand">กรอกข้อมูลส่วนตัว</h4>
+                </div>
+                <br>
+                <form class="form-horizontal"action="../staff/insertstaff.jsp" >		
+                    <div class="form-group">
+                        <label for="fname" class="col-sm-2 col-md-2 control-label">ชื่อ:<font color="#ff0000">*</font></label>
+                        <div class="col-sm-3 col-md-3">
+                            <input type="text" class="form-control"  name="fname" maxlength="250"id="name">
+                            <p id="spname"></p>
+                        </div>
+
+                        <label for="lname" class="col-sm-2 control-label">นามสกุล:<font color="#ff0000">*</font></label>
+                        <div class="col-sm-3 col-md-3">
+                            <input type="text" class="form-control" id="surname" name="lname" maxlength="250"id="surname">
+                            <p id="spsurname">
+                        </div>
+
+                    </div>
+
+
+  <div class="form-group">
+                        <label for="sex" class="col-sm-2 control-label">เพศ</label>
+                        <div class="col-sm-8">
+                            <input type="radio"name="sex"value="ชาย"id="sex">ชาย
+                            <input  type="radio"name="sex"value="หญิง"id="sex">หญิง
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="line" class="col-sm-2 control-label">การศึกษา</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="line" name="education"maxlength="250">
+                        </div>
+						<label for="facebook" class="col-sm-2 control-label">เงินเดือน</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="pass" name="Salary"maxlength="250">
+                        </div>
+                    </div>
+
+
+ <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">เบอร์โทรศัพท์</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="phone" name="phone"maxlength="250">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="address" class="col-sm-2 control-label">ที่อยู่:<font color="#ff0000">*</font></label>
+                        <div class="col-sm-8">
+                            <textarea  class="form-control"  name="address"maxlength="1000">
+	</textarea>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="brithday" class="col-sm-2 control-label">วันที่เข้าทำงาน</label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control" id="pass" name="brithday"placeholder="Birthday">
+                        </div>
+                    </div>
+
+                
+
+                    <div class="modal-footer">
+
+                        <input class="btn btn-success" type="submit" value="ตกลง">
+                         <button type="close" class="btn btn-danger"class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">ยกเลิก</button>
+
+                    </div>
+
+                    <br>        
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
